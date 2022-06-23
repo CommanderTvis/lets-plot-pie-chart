@@ -81,7 +81,6 @@ fun pieChart(data: Map<String, Double>, displayGroupName: DisplayGroupName): Plo
                 axisText = "blank",
                 axisTitle = "blank",
                 panelGrid = "blank",
-                legendText = guideLegend(123)
             ),
         )
         .run {
