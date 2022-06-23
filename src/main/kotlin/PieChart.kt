@@ -107,7 +107,6 @@ fun pieChart(data: Map<String, Double>, displayGroupName: DisplayGroupName): Plo
 fun main() {
     val p = pieChart(mapOf("A" to 0.25, "B" to 0.25, "C" to 0.5), DisplayGroupName.LABEL)
 
-    // Export to SVG and show in the default browser.
     val content = PlotSvgExport.buildSvgImageFromRawSpecs(p.toSpec())
     val file = Path.of("./plot.svg")
     file.writeText(content)
